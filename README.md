@@ -1,8 +1,8 @@
-# Creative CV Portfolio Website
+# Interactive-CV-Template
 
 A modern, animated portfolio website built with Next.js 15, featuring smooth animations and a clean design aesthetic. This project is a clone of a creative CV template, showcasing a professional portfolio for a Creative Director.
 
-## 🚀 Tech Stack
+## Tech Stack
 
 - **Framework**: Next.js 15.3.5 (App Router)
 - **Language**: TypeScript
@@ -21,7 +21,7 @@ A modern, animated portfolio website built with Next.js 15, featuring smooth ani
   - drizzle-orm (database ORM)
   - stripe (payments)
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 creative-cv-framer-clone/
@@ -56,7 +56,7 @@ creative-cv-framer-clone/
 └── package.json               # Dependencies and scripts
 ```
 
-## 🎨 Features
+## Features
 
 - **Responsive Design**: Fully responsive layout that works on all devices
 - **Smooth Animations**: Framer Motion powered animations for engaging user experience
@@ -66,7 +66,7 @@ creative-cv-framer-clone/
 - **Project Gallery**: Grid-based project showcase with hover effects
 - **Contact Section**: Professional contact information display
 
-## 🛠️ Installation
+## Installation
 
 1. Clone the repository:
 ```bash
@@ -85,7 +85,7 @@ pnpm install
 bun install
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 Run the development server:
 
@@ -108,7 +108,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - `npm start` - Start production server
 - `npm run lint` - Run ESLint
 
-## 🎯 Customization
+## Customization
 
 ### Personal Information
 
@@ -145,48 +145,9 @@ export const metadata: Metadata = {
 };
 ```
 
-## 🔒 Security Notes
-
-### ⚠️ Sensitive Data Found
-
-The following sensitive data was identified in the codebase:
-
-1. **Hardcoded Supabase Storage URLs**:
-   - Location: Multiple component files
-   - Files affected:
-     - `src/app/layout.tsx` (line 22)
-     - `src/components/sections/hero-section.tsx` (lines 7-11, 69, 82, 114)
-     - `src/components/sections/projects-section.tsx` (lines 11, 17, 23, 29)
-     - `src/components/sections/software-section.tsx` (lines 25, 31)
-   
-   **Recommendation**: Move these URLs to environment variables:
-   ```typescript
-   // .env.local
-   NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
-   
-   // In components
-   const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
-   ```
-
-2. **Personal Contact Information**:
-   - Email: becky@smith.com
-   - Phone: +1 415 829 8298
-   - These are placeholder values and should be updated with your actual information
-
-### Environment Variables
-
-Create a `.env.local` file in the root directory:
-
-```env
-# Supabase Storage URL (if using Supabase for assets)
-NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
-
-# Add other environment variables as needed
-```
-
 **Important**: Never commit `.env.local` to version control. The `.gitignore` file already excludes `.env*` files.
 
-## 📦 Dependencies
+## Dependencies
 
 Key dependencies include:
 - Next.js 15.3.5
@@ -198,32 +159,11 @@ Key dependencies include:
 
 See `package.json` for the complete list of dependencies.
 
-## 🌐 Deployment
-
-### Vercel (Recommended)
-
-The easiest way to deploy is using [Vercel](https://vercel.com/new):
-
-1. Push your code to GitHub
-2. Import your repository to Vercel
-3. Add environment variables in Vercel dashboard
-4. Deploy
-
-### Other Platforms
-
-This project can be deployed to any platform that supports Next.js:
-- Netlify
-- AWS
-- Digital Ocean
-- Railway
-
-Check out the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## 📄 License
+## License
 
 This project is private and intended for personal/portfolio use.
 
