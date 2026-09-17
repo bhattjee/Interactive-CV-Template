@@ -68,8 +68,8 @@ const HeroSection = () => {
           <Image
             src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/1f61d8ab-7867-4b5f-bdd7-b1467a7679ad-creativecv-framer-website/assets/images/HAU0mMgxdfLvy281z646lvwsY-1.jpg"
             alt="Portrait of a woman smiling, against a city skyline at dusk"
-            layout="fill"
-            objectFit="cover"
+            fill
+            style={{ objectFit: 'cover' }}
             priority
             className="object-center"
           />
@@ -81,8 +81,8 @@ const HeroSection = () => {
         <Image
           src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/1f61d8ab-7867-4b5f-bdd7-b1467a7679ad-creativecv-framer-website/assets/images/HAU0mMgxdfLvy281z646lvwsY-1.jpg"
           alt="Portrait of a woman smiling, against a city skyline at dusk"
-          layout="fill"
-          objectFit="cover"
+          fill
+          style={{ objectFit: 'cover' }}
           priority
           className="object-center"
         />
